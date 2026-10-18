@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Ronald B. Andales — Portfolio</title>
+  <meta name="description"
+    content="Portfolio of John Ronald B. Andales — IT Student & Web Developer from Cebu, Philippines." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header>
+    <a class="logo" href="#section-home">John<span>.</span></a>
+    <nav>
+      <a href="#section-home" class="active" data-target="section-home">Home</a>
+      <a href="#section-about" data-target="section-about">About</a>
+      <a href="#section-projects" data-target="section-projects">Projects</a>
+      <a href="#section-contact" data-target="section-contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="section-home">
+
+      <div class="inner">
+
+        <div class="text">
+          <div class="greeting">👋 Hello, I'm</div>
+          <h1 class="name">John Ronald<br /><span>B. Andales</span></h1>
+          <div class="role">IT Student &amp; Web Developer</div>
+          <div class="location">📍 Bang Bang, Cordova, Cebu, Philippines</div>
+
+          <div class="ctas">
+            <a class="btn-primary" href="#section-projects">View Projects</a>
+            <a class="btn-ghost" href="#section-contact">Contact Me</a>
+          </div>
+        </div>
+
+        <div class="avatar">
+          <img src="images/dodo.jpg" alt="John Ronald B. Andales"
+            onerror="this.outerHTML='<div class=\'fallback\'>👤</div>'" />
+        </div>
+
+      </div>
+
+      <div class="scroll-hint">
+        <div class="scroll-arrow">
+          <span></span><span></span><span></span>
+        </div>
+        Scroll to explore
+      </div>
+
+    </section>
+
+    <section class="content-section" id="section-about">
+      <div class="sec-label">Get to know me</div>
+      <h2 class="sec-title">About Me</h2>
+
+      <p class="bio-text">
+        Hello! I'm John Ronald, a passionate IT student and aspiring developer from Cebu, Philippines.
+        I love building web applications and exploring new technologies. I'm dedicated to crafting
+        clean, efficient, and user-friendly digital experiences that make a real difference.
+      </p>
+
+      <div class="divider"></div>
+
+      <div class="sub-label" style="margin-bottom:14px">Technical Skills</div>
+      <div class="chip-row" style="margin-bottom:32px">
+        <span class="chip">HTML / CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">React</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">Python</span>
+        <span class="chip">Java</span>
+        <span class="chip">PHP</span>
+        <span class="chip">MySQL</span>
+        <span class="chip">Firebase</span>
+        <span class="chip">Git</span>
+        <span class="chip">Figma</span>
+        <span class="chip">Bootstrap</span>
+      </div>
+
+      <div class="sub-label" style="margin-bottom:14px">Interests</div>
+      <div class="chip-row">
+        <span class="chip">🎮 Gaming</span>
+        <span class="chip">🎵 Music</span>
+        <span class="chip">📸 Photography</span>
+        <span class="chip">✈️ Travel</span>
+        <span class="chip">📖 Reading</span>
+      </div>
+    </section>
+
+    <section class="content-section" id="section-projects">
+      <div class="sec-label">Portfolio</div>
+      <h2 class="sec-title">My Projects</h2>
+      <p class="sec-sub">A collection of things I've built and worked on.</p>
+
+      <div class="project-grid">
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-title">ASCII Art Shapes</div>
+            <span class="tag tag-system">C Program</span>
+          </div>
+          <div class="project-imgs">
+            <img src="images/project1-code.jpg" alt="ASCII Art - Code" />
+            <img src="images/project1-output.jpg" alt="ASCII Art - Output" />
+          </div>
+          <div class="tech-row">
+            <span class="tech-badge">C Language</span>
+            <span class="tech-badge">printf()</span>
+            <span class="tech-badge">Loops</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-title">Data Type Showcase</div>
+            <span class="tag tag-data">C Program</span>
+          </div>
+          <div class="project-imgs">
+            <img src="images/project2-code.jpg" alt="Data Types - Code" />
+            <img src="images/project2-output.jpg" alt="Data Types - Output" />
+          </div>
+          <div class="tech-row">
+            <span class="tech-badge">C Language</span>
+            <span class="tech-badge">Data Types</span>
+            <span class="tech-badge">Variables</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="content-section" id="section-contact" style="padding-bottom:120px">
+      <div class="sec-label">Reach Out</div>
+      <h2 class="sec-title">Contact Me</h2>
+      <p class="sec-sub">Feel free to reach out for collaborations or just to say hi! 👋</p>
+
+      <div class="contact-list">
+
+        <a class="contact-card" href="mailto:johanandales@gmail.com">
+          <div class="contact-icon-box">📧</div>
+          <div class="contact-info-text">
+            <div class="contact-lbl">Email</div>
+            <div class="contact-val">johanandales@gmail.com</div>
+          </div>
+          <div class="contact-arrow">↗</div>
+        </a>
+
+        <a class="contact-card" href="https://www.facebook.com/john.andales.745276#" target="_blank" rel="noopener">
+          <div class="contact-icon-box">📘</div>
+          <div class="contact-info-text">
+            <div class="contact-lbl">Facebook</div>
+            <div class="contact-val">John Andales</div>
+          </div>
+          <div class="contact-arrow">↗</div>
+        </a>
+
+        <div class="contact-card" onclick="copyPhone()">
+          <div class="contact-icon-box">📱</div>
+          <div class="contact-info-text">
+            <div class="contact-lbl">Phone</div>
+            <div class="contact-val">09262338920</div>
+          </div>
+          <div class="contact-arrow" id="copy-label">Copy</div>
+        </div>
+
+        <div class="contact-card" style="cursor:default">
+          <div class="contact-icon-box">📍</div>
+          <div class="contact-info-text">
+            <div class="contact-lbl">Location</div>
+            <div class="contact-val">Bang Bang, Cordova, Cebu, Philippines</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div id="copy-toast">📋 Phone number copied!</div>
+
+  <script>
+    const sections = document.querySelectorAll('#section-home, .content-section');
+    const navLinks = document.querySelectorAll('nav a[data-target]');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navLinks.forEach(n => {
+            n.classList.toggle('active', n.dataset.target === id);
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+
+    sections.forEach(s => observer.observe(s));
+
+    function copyPhone() {
+      navigator.clipboard.writeText('09262338920').then(() => {
+        const lbl = document.getElementById('copy-label');
+        lbl.textContent = '✓ Copied';
+        setTimeout(() => lbl.textContent = 'Copy', 2200);
+
+        const toast = document.getElementById('copy-toast');
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2500);
+      }).catch(() => alert('Phone: 09262338920'));
+    }
+  </script>
+
+</body>
+
+</html>
