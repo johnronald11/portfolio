@@ -11,8 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet" />
-
   <link rel="stylesheet" href="style.css" />
+  
 </head>
 
 <body>
@@ -20,10 +20,10 @@
   <header>
     <a class="logo" href="#section-home">John<span>.</span></a>
     <nav>
-      <a href="#section-home" class="active" data-target="section-home">Home</a>
-      <a href="#section-about" data-target="section-about">About</a>
-      <a href="#section-projects" data-target="section-projects">Projects</a>
-      <a href="#section-contact" data-target="section-contact">Contact</a>
+      <a href="#section-home">Home</a>
+      <a href="#section-about">About</a>
+      <a href="#section-projects">Projects</a>
+      <a href="#section-contact">Contact</a>
     </nav>
   </header>
 
@@ -45,8 +45,7 @@
         </div>
 
         <div class="avatar">
-          <img src="images/dodo.jpg" alt="John Ronald B. Andales"
-            onerror="this.outerHTML='<div class=\'fallback\'>👤</div>'" />
+          <img src="images/dodo.jpg" alt="John Ronald B. Andales" />
         </div>
 
       </div>
@@ -165,14 +164,14 @@
           <div class="contact-arrow">↗</div>
         </a>
 
-        <div class="contact-card" onclick="copyPhone()">
+        <a class="contact-card" href="tel:09262338920">
           <div class="contact-icon-box">📱</div>
           <div class="contact-info-text">
             <div class="contact-lbl">Phone</div>
             <div class="contact-val">09262338920</div>
           </div>
-          <div class="contact-arrow" id="copy-label">Copy</div>
-        </div>
+          <div class="contact-arrow">↗</div>
+        </a>
 
         <div class="contact-card" style="cursor:default">
           <div class="contact-icon-box">📍</div>
@@ -186,38 +185,6 @@
     </section>
 
   </main>
-
-  <div id="copy-toast">📋 Phone number copied!</div>
-
-  <script>
-    const sections = document.querySelectorAll('#section-home, .content-section');
-    const navLinks = document.querySelectorAll('nav a[data-target]');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const id = entry.target.id;
-          navLinks.forEach(n => {
-            n.classList.toggle('active', n.dataset.target === id);
-          });
-        }
-      });
-    }, { threshold: 0.4 });
-
-    sections.forEach(s => observer.observe(s));
-
-    function copyPhone() {
-      navigator.clipboard.writeText('09262338920').then(() => {
-        const lbl = document.getElementById('copy-label');
-        lbl.textContent = '✓ Copied';
-        setTimeout(() => lbl.textContent = 'Copy', 2200);
-
-        const toast = document.getElementById('copy-toast');
-        toast.classList.add('show');
-        setTimeout(() => toast.classList.remove('show'), 2500);
-      }).catch(() => alert('Phone: 09262338920'));
-    }
-  </script>
 
 </body>
 
